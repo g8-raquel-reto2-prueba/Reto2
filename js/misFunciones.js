@@ -150,7 +150,7 @@ function pintarRespuestaCliente(items)
         myTable+="<td>"+items[i].id+"</td>";
         myTable+="<td>"+items[i].name+"</td>";
         myTable+="<td>"+items[i].email+"</td>";
-        myTable+="<td>"+items[i].age+"</td><br>";
+        myTable+="<td>"+items[i].age+"</td>";
        
         myTable+="<td> <button onclick='borrarElementoCliente("+items[i].id+")'>Borrar</button>";
         myTable+="</tr>";
@@ -249,7 +249,7 @@ function traerInformacionMensaje()
 }
 function pintarRespuestaMensaje(items)
 {
-    let myTable="<table border=1>";
+    let myTable="<table border=2>";
     myTable+="<thead>";
     myTable+="<tr>"
     myTable+="<th>"+'ID'+"</th>"
@@ -263,7 +263,7 @@ function pintarRespuestaMensaje(items)
         
         myTable+="<tr>";
         myTable+="<td>"+items[i].id+"</td>";
-        myTable+="<td>"+items[i].menssagetext+"</td>";
+        myTable+="<td>"+items[i].messagetext+"</td>";
        
        
         myTable+="<td> <button onclick='borrarElementoMensaje("+items[i].id+")'>Borrar</button>";

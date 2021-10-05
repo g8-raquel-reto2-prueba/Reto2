@@ -19,6 +19,14 @@
             
             background-color:khaki;
         }
+        .clientes{
+            color:blue;
+            
+            border-color: black;
+        }
+        .imagen{
+            border-radius:5cm;
+        }
         
     </style>
 </head>
@@ -26,6 +34,7 @@
     
     
     <h1 class="games">Games</h1>
+    <img src="https://source.unsplash.com/AoMd3sk9Cw0" width="200" height="200" class="imagen">
     <div id="resultado">
 
     </div>
@@ -40,22 +49,15 @@
     <button onclick="traerInformacion()" class="boton">Consultar</button>
     <button onclick="guardarInformacion()" class="boton">Guardar</button>
     <button onclick="editarInformacion()" class="boton">Actualizar</button><br><br>
-    <div>
-        <input type="number" id="id" placeholder="ID" class="input"><br>
-        <input type="text" id="name" placeholder="Nombre" class="input"><br>
-        <input type="email" id="email" placeholder="Email" class="input"><br>
-        <input type="number" id="age" placeholder="Age" class="input"><br>
-    </div>
-    <button onclick="traerInformacionCliente()" class="boton">Consultar Clientes</button>
-    <button onclick="guardarInformacionCliente()" class="boton">Guardar Cliente</button>
-    <button onclick="editarInformacionCliente()" class="boton">Actualizar Cliente</button><br><br>
-    <div>
-        <input type="number" id="id" placeholder="ID" class="input"><br>
-        <input  type="text" id="messagetext" placeholder="Mensaje" class="input"><br>    
-    </div>
-    <button onclick="traerInformacionMensaje()" class="boton">Consultar Mensajes</button>
-    <button onclick="guardarInformacionMensaje()" class="boton">Guardar Mensaje</button>
-    <button onclick="editarInformacionMensaje()" class="boton">Actualizar Mensaje</button><br><br>
+    
+    
+    <form action="clientes.html">
+        <input type="submit" value="Ir a clientes" class="clientes">
+        
+    </form><br>
+    <form action="mensajes.html">
+        <input type="submit" value="Ir a mensajes" class="clientes">
+    </form>
     
 
 

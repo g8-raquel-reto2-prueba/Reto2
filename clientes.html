@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/misFunciones.js"></script> 
+    <title>Clientes</title>
+</head>
+<style>
+    .titulo{
+        color: cornflowerblue;
+    }
+    .home{
+        color:blue;
+        
+        border-color: black;
+    }
+    .imagen{
+        border-radius: 5cm;
+    }
+</style>
+<body>
+    <h1 class="titulo">Clientes Games</h1>
+    <img src="https://source.unsplash.com/vWchRczcQwM" width="200" height="200" class="imagen">
+    <div id="resultado">
+
+    </div>
+    <div>
+        <input type="number" id="id" placeholder="ID" class="input"><br>
+        <input type="text" id="name" placeholder="Nombre" class="input"><br>
+        <input type="email" id="email" placeholder="Email" class="input"><br>
+        <input type="number" id="age" placeholder="Age" class="input"><br>
+    </div>
+    <button onclick="traerInformacionCliente()" class="boton">Consultar Clientes</button>
+    <button onclick="guardarInformacionCliente()" class="boton">Guardar Cliente</button>
+    <button onclick="editarInformacionCliente()" class="boton">Actualizar Cliente</button><br><br>
+    <form action="index.html">
+        <input type="submit" value="Ir a home" class="home">
+    </form>
+    
+</body>
+</html>
