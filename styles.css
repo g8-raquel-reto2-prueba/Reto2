@@ -1,0 +1,49 @@
+body {
+    width: 1180px;
+    margin: 10px auto;
+    background-color:lightblue;
+    padding: 0px 20px 20px 20px;
+    border: 5px solid black;
+}
+h1 {
+    
+    text-align: center;
+    font-family: cursive;
+    color:blue;
+    }
+    .games{
+        color: blue;
+    }
+    .boton{
+        color:darkblue;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .input{
+        
+        background-color:lightblue;
+        text-align: center;
+        
+    }
+    .clientes{
+        color:blue;
+        
+        border-color: black;
+    }
+    .imagen{
+        border-radius:5cm;
+        image-orientation: from-image;
+        display:block;
+        margin:auto;
+       
+
+    }
+    .paginas
+    {
+        text-align: center;
+    }
+    #resultado
+    {
+        text-align: center;
+    }

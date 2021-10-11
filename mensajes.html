@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script type="text/javascript" src="js/misFunciones.js"></script> 
+    <link href="./styles.css" rel="stylesheet" type="text/css"/>
     <title>Mensajes Games</title>
     <style>
         .mensajes{
@@ -22,17 +23,21 @@
 </head>
 <body>
     <h1 class="titulo">Mensajes Games</h1>
-    <img src="https://source.unsplash.com/PEJtZfT6C1Q" width="200" height="200" class="imagen">
+    <img src="https://source.unsplash.com/PEJtZfT6C1Q" width="200" height="200" class="imagen"><br>
     <div id="resultado">
 
     </div>
-    <div>
-        <input type="number" id="id" placeholder="ID" class="input"><br>
-        <input  type="text" id="messagetext" placeholder="Mensaje" class="input"><br>    
+    <div class="input">
+        <input type="number" id="id" placeholder="ID" class="input" style="display: inline;">
+        <input  type="text" id="messagetext" placeholder="Mensaje" class="input" style="display: inline;"><br>    
+    </div><br>
+    <div class="boton">
+        <a href="ListaMensajes.html"><input type="button" value="Consultar" class="boton"></a>
+        <button onclick="guardarInformacionMensaje()" class="boton">Guardar Mensaje</button>
+        <button onclick="editarInformacionMensaje()" class="boton">Actualizar Mensaje</button><br><br>
+
     </div>
-    <button onclick="traerInformacionMensaje()" class="boton">Consultar Mensajes</button>
-    <button onclick="guardarInformacionMensaje()" class="boton">Guardar Mensaje</button>
-    <button onclick="editarInformacionMensaje()" class="boton">Actualizar Mensaje</button><br><br>
+    
     <form action="index.html">
         <input type="submit" value="Ir a home" class="mensajes">
     </form>

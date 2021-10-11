@@ -64,7 +64,7 @@ function guardarInformacion(){
             $("#model").val("");
             $("#category_id").val("");
             $("#name").val("");
-            traerInformacion();
+           
             alert("se ha guardado el dato")
         }
     });
@@ -92,7 +92,7 @@ function editarInformacion(){
             $("#minage").val("");
             $("#category_id").val("");
             $("#name").val("");
-            traerInformacion();
+            
             alert("se ha Actualizado")
         }
     });
@@ -111,7 +111,7 @@ function borrarElemento(idElemento){
         datatype:"JSON",
         success:function(respuesta){
             $("#resultado").empty();
-            traerInformacion();
+            
             alert("Se ha Eliminado.")
         }
     });
@@ -181,7 +181,7 @@ function guardarInformacionCliente(){
             $("#email").val("");
             $("#age").val("");
         
-            traerInformacionCliente();
+            
             alert("se ha guardado el dato")
         }
     });
@@ -209,7 +209,7 @@ function editarInformacionCliente(){
             $("#email").val("");
             $("#age").val("");
         
-            traerInformacionCliente();
+           
             alert("se ha guardado el dato")
         }
     });
@@ -227,7 +227,7 @@ function borrarElementoCliente(idElemento){
         datatype:"JSON",
         success:function(respuesta){
             $("#resultado").empty();
-            traerInformacionCliente();
+            
             alert("Se ha Eliminado.")
         }
     });
@@ -293,7 +293,7 @@ function guardarInformacionMensaje(){
             $("#messagetext").val("");
             
         
-            traerInformacionMensaje();
+          
             alert("se ha guardado el dato")
         }
     });
@@ -319,7 +319,7 @@ function editarInformacionMensaje(){
             $("#messagetext").val("");
            
         
-            traerInformacionMensaje();
+           
             alert("se ha guardado el dato")
         }
     });
@@ -337,7 +337,7 @@ function borrarElementoMensaje(idElemento){
         datatype:"JSON",
         success:function(respuesta){
             $("#resultado").empty();
-            traerInformacionMensaje();
+            
             alert("Se ha Eliminado.")
         }
     });

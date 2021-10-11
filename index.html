@@ -6,58 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script type="text/javascript" src="js/misFunciones.js"></script> 
+    <link href="./styles.css" rel="stylesheet" type="text/css"/>
     
     <title>Reto2 Games</title>
-    <style>
-        .games{
-            color: blue;
-        }
-        .boton{
-            color:darkblue;
-        }
-        .input{
-            
-            background-color:khaki;
-        }
-        .clientes{
-            color:blue;
-            
-            border-color: black;
-        }
-        .imagen{
-            border-radius:5cm;
-        }
-        
-    </style>
 </head>
 <body>
     
     
     <h1 class="games">Games</h1>
-    <img src="https://source.unsplash.com/AoMd3sk9Cw0" width="200" height="200" class="imagen">
-    <div id="resultado">
+    
+    <img src="https://source.unsplash.com/AoMd3sk9Cw0" width="200" height="200" class="imagen"><br>
+    
+    
+    <div id="resultado" style="text-align: center;">
 
     </div>
-    <div>
-        <input type="number" id="id" placeholder="ID" class="input"><br>
-        <input type="text" id="developer" placeholder="Developer" class="input"><br>
-        <input type="number" id="minage" placeholder="Minage" class="input"><br>
-        <input type="number" id="category_id" placeholder="Category ID" class="input"><br>
-        <input type="text" id="name" placeholder="Name" class="input"><br>
+    <div class="input">
+        <input type="number" id="id" placeholder="ID" style="display: inline;">
+        <input type="text" id="developer" placeholder="Developer" style="display: inline;" >
+        <input type="number" id="minage" placeholder="Minage" style="display: inline;">
+        <input type="number" id="category_id" placeholder="Category ID" style="display: inline;">
+        <input type="text" id="name" placeholder="Name" style="display: inline;"><br>
 
     </div><br>
-    <button onclick="traerInformacion()" class="boton">Consultar</button>
-    <button onclick="guardarInformacion()" class="boton">Guardar</button>
-    <button onclick="editarInformacion()" class="boton">Actualizar</button><br><br>
+    <div class="boton">
+        <a href="ListaGames.html"><input type="button" value="Consultar"></a>
+        <button onclick="guardarInformacion()" >Guardar</button>
+        <button onclick="editarInformacion()" >Actualizar</button><br><br>
+    </div>
+    <div class="paginas">
+        <p style="text-align: center;">
+            <form action="clientes.html" style="display: inline;">
+                <input type="submit" value="Ir a clientes" class="clientes">
+                
+            </form>
+            <form action="mensajes.html"  style="display: inline;">
+                <input type="submit" value="Ir a mensajes" class="clientes">
+            </form>
     
+        </p>
+
+    </div>
+    <img src="giphy.gif" width="30" height="30" class="imagen">
     
-    <form action="clientes.html">
-        <input type="submit" value="Ir a clientes" class="clientes">
-        
-    </form><br>
-    <form action="mensajes.html">
-        <input type="submit" value="Ir a mensajes" class="clientes">
-    </form>
+   
     
 
 
